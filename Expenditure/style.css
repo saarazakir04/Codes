@@ -1,0 +1,127 @@
+html{
+    box-sizing: border-box;
+    height: 100;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5af19, #f12711);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #42a5f5;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 0 0 10px 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-expense, .expense-list, .total-expense {
+    background-color: #fff8e1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 8px solid #42a5f5;
+}
+
+.add-expense h2, .expense-list h2, .total-expense h2 {
+    margin-bottom: 15px;
+    color: #ff7043;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #42a5f5;
+}
+
+.form-control input {
+    padding: 10px;
+    border: 2px solid #42a5f5;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #66bb6a;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #388e3c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #42a5f5;
+    color: #ffffff;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:hover {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+.total-expense h2 {
+    text-align: right;
+    font-size: 24px;
+    color: #66bb6a;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #42a5f5;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
